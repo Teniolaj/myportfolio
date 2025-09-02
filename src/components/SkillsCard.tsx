@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 
 const SkillsCard = ( {skills}: {skills: {aspect: string, skills: string[]}}) => {
   return (

@@ -1,6 +1,6 @@
 import { forwardRef } from 'react'
 
-export const HeroSection = forwardRef<HTMLDivElement, Record<string, never>>((_, ref) => {
+export const HeroSection = forwardRef<HTMLDivElement, object>((_, ref) => {
 
   return (
     <section ref={ref} id="home" className="w-full mx-auto max-w-screen-xxl py-20 bg-gradient-to-br from-[#1E293B] to-[#0F172A] text-white">

@@ -1,11 +1,10 @@
-import React from 'react'
 import { skillsData } from '../../data/PortfolioData'
 import SkillsCard from '../SkillsCard'
 import { forwardRef} from 'react'
 
 
 
-const SkillsSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const SkillsSection = forwardRef<HTMLDivElement, object>((_, ref) => {
   return (
     <section ref={ref} id="skills" className="bg-gradient-to-r from-[#38BDF8] to-[#9333EA] w-full mx-auto max-w-screen-xxl py-5">
         <div className="max-w-5xl mx-auto px-6">

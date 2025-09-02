@@ -1,4 +1,3 @@
-import React from 'react'
 import { Globe } from "lucide-react"
 
 const ProjectCard = ({project}: {project: {title: string, description: string, techStack: string[], link: string}}) => {

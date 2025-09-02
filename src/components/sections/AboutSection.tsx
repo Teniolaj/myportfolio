@@ -1,7 +1,6 @@
-import React from 'react'
 import { forwardRef } from 'react'
 
-export const AboutSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+export const AboutSection = forwardRef<HTMLDivElement, object>((_, ref) => {
   return (
     <section ref={ref} id="about" className='w-full mx-auto max-w-screen-xxl bg-[#F8FAFC]'>
         <div className="w-full text-center py-3 px-2">

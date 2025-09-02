@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 
 
 const ExperienceCard = ( {experience}: {experience: {jobtitle: string, company: string, timeframe: string, responsibilities: string[]}}) => {

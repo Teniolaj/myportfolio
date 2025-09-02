@@ -1,9 +1,8 @@
-import React from 'react'
 import ProjectCard from '../ProjectCard'
 import { projectsData } from '../../data/PortfolioData'
 import { forwardRef } from 'react'
 
-export const ProjectsSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+export const ProjectsSection = forwardRef<HTMLDivElement, object>((_, ref) => {
 
   return (
     <section ref={ref} id="projects" className='w-full mx-auto max-w-screen-xxl bg-white'>

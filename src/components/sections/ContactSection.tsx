@@ -1,10 +1,9 @@
-import React from 'react'
 import emailjs from 'emailjs-com'
 import { useState } from 'react'
 import { forwardRef } from 'react'
 import { useRef } from 'react'
 
-const ContactSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const ContactSection = forwardRef<HTMLDivElement, object>((_, ref) => {
   
   const formRef = useRef<HTMLFormElement | null>(null)
 
@@ -20,7 +19,7 @@ const ContactSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
 
     if (!formRef.current) return;
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY).then((result) => {
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY).then(() => {
       alert("Message sent successfullt")
       setFormData({name: "", email: "", message: ""})
     })

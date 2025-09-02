@@ -2,7 +2,7 @@ import ExperienceCard from '../ExperienceCard'
 import { experienceData } from '../../data/PortfolioData'
 import { forwardRef } from 'react'
 
-const ExperienceSection = forwardRef<HTMLDivElement, Record<string, never>>((_, ref) => {
+const ExperienceSection = forwardRef<HTMLDivElement, object>((_, ref) => {
 
   return (
     <section ref={ref} id="experience"className='w-full mx-auto max-w-screen-xxl bg-[#F1F5F9]'>
@@ -14,6 +14,7 @@ const ExperienceSection = forwardRef<HTMLDivElement, Record<string, never>>((_, 
                   <ExperienceCard key={index} experience={experience}/>
                 )}
             </div>
+
 
         
 
