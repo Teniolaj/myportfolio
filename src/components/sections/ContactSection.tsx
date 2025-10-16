@@ -26,11 +26,11 @@ const ContactSection = forwardRef<HTMLDivElement, object>((_, ref) => {
   }
 
   return (
-    <section ref={ref} id="contact" className='w-full mx-auto max-w-screen-xxl py-10 bg-[#E2E8F0]'>
+  <section ref={ref} id="contact" className='w-full mx-auto max-w-screen-xxl py-10 bg-slate-900 text-slate-100'>
         <div className='w-full text-center py-3 px-5'>
                 <h1 className='text-4xl font-bold'>Get in Touch</h1>
 
-                <form className="space-y-5 max-w-md mx-auto mt-8 border-4 border-gray-300 rounded-lg p-5" onSubmit={handleSubmit} ref={formRef}>
+                <form className="space-y-5 max-w-md mx-auto mt-8 border border-slate-800 rounded-lg p-5 bg-slate-950" onSubmit={handleSubmit} ref={formRef}>
                   <div className=''>
                     <input 
                       type="text" 
@@ -38,7 +38,7 @@ const ContactSection = forwardRef<HTMLDivElement, object>((_, ref) => {
                       id='name' 
                       name='name'
                       required 
-                      className='w-full p-4 border-2 border-gray-300 rounded-lg text-black focus:outline-none focus:border-blue-500' 
+                      className='w-full p-4 border border-slate-700 rounded-lg bg-slate-900 text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500' 
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                     />
@@ -51,7 +51,7 @@ const ContactSection = forwardRef<HTMLDivElement, object>((_, ref) => {
                       id='email' 
                       name='email'
                       required 
-                      className='w-full p-4 border-2 border-gray-300 rounded-lg text-black focus:outline-none focus:border-blue-500' 
+                      className='w-full p-4 border border-slate-700 rounded-lg bg-slate-900 text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500' 
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                     />
@@ -64,7 +64,7 @@ const ContactSection = forwardRef<HTMLDivElement, object>((_, ref) => {
                       name='message'
                       rows={5}
                       required 
-                      className='w-full p-4 border-2 border-gray-300 rounded-lg text-black focus:outline-none focus:border-blue-500 resize-none' 
+                      className='w-full p-4 border border-slate-700 rounded-lg bg-slate-900 text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none' 
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                     />
@@ -73,7 +73,7 @@ const ContactSection = forwardRef<HTMLDivElement, object>((_, ref) => {
                   <div className=''>
                     <button 
                       type="submit" 
-                      className='w-full bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors duration-200 font-medium'
+                      className='w-full bg-teal-500 text-slate-900 py-3 px-6 rounded-lg hover:bg-teal-400 transition-colors duration-200 font-medium'
                     >
                       Send Message
                     </button>

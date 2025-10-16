@@ -3,7 +3,7 @@
 
 const ExperienceCard = ( {experience}: {experience: {jobtitle: string, company: string, timeframe: string, responsibilities: string[]}}) => {
   return (
-    <div className='w-full bg-white rounded-lg shadow-md p-4 border border-gray-400 space-y-3 '>
+    <div className='w-full bg-slate-950 rounded-lg shadow-sm p-4 border border-slate-800 space-y-3 text-slate-100 '>
     <h1 className='text-2xl font-bold'>{experience.jobtitle}</h1>
     <h2 className='text-xl'>{experience.company}</h2>
     <h3>{experience.timeframe}</h3>

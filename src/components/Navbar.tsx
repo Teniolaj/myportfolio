@@ -27,20 +27,20 @@ const Navbar = ({ onSkillClick, onHeroClick, onAboutClick, onProjectsClick, onEx
 
   return (
     <div>
-        <nav className=" w-full px-3 py-1 items-center justify-center bg-gray-400 fixed top-0 left-0 right-0 z-50">
+        <nav className=" w-full px-3 py-1 items-center justify-center bg-slate-900 border-b border-slate-800 fixed top-0 left-0 right-0 z-50 text-slate-100">
             <div className="flex items-center justify-between max-w-screen-xxl lg:px-16 px-6 py-5 w-full mx-auto  lg:relative">
 
                 <div className=" w-full z-30 flex items-center justify-between lg:pb-0 ">
 
-                    <h1 className="text-2xl font-bold"> Teniola <span className="text-blue-500">John</span></h1>
+                    <h1 className="text-2xl font-bold"> Teniola <span className="text-teal-400">John</span></h1>
 
                     {/* DESKTOP MENU */}
                     <div className="hidden gap-4 text-lg font-semibold items-center justify-center  md:flex">
-                        <a className='hover:text-blue-500 cursor-pointer text-sm' onClick={onHeroClick}>Home</a>
-                        <a className='hover:text-blue-500 cursor-pointer text-sm' onClick={onAboutClick}>About</a>
-                        <a className='hover:text-blue-500 cursor-pointer text-sm' onClick={onProjectsClick}>Projects</a>
-                        <a className='hover:text-blue-500 cursor-pointer text-sm' onClick={onExperienceClick}>Experience</a>
-                        <a className='hover:text-blue-500 cursor-pointer text-sm' onClick={onSkillClick}>Skills</a>
+                        <a className='hover:text-teal-400 cursor-pointer text-sm' onClick={onHeroClick}>Home</a>
+                        <a className='hover:text-teal-400 cursor-pointer text-sm' onClick={onAboutClick}>About</a>
+                        <a className='hover:text-teal-400 cursor-pointer text-sm' onClick={onProjectsClick}>Projects</a>
+                        <a className='hover:text-teal-400 cursor-pointer text-sm' onClick={onExperienceClick}>Experience</a>
+                        <a className='hover:text-teal-400 cursor-pointer text-sm' onClick={onSkillClick}>Skills</a>
                         {/* <a className='hover:text-blue-500 cursor-pointer text-sm'>Certification</a> */}
                         <a className='hover:text-blue-500 cursor-pointer text-sm' onClick={onContactClick}>Contact</a>
                     </div>
@@ -57,7 +57,7 @@ const Navbar = ({ onSkillClick, onHeroClick, onAboutClick, onProjectsClick, onEx
 
                 {/* mobile view */}
                 <ul
-                className={`lg:hidden uppercase flex flex-col gap-4 text-lg font-semibold items-center justify-center fixed w-full h-screen top-0 left-0 bg-gray-400 py-32 duration-500 ease-in-out transition-all ${
+                className={`lg:hidden uppercase flex flex-col gap-4 text-lg font-semibold items-center justify-center fixed w-full h-screen top-0 left-0 bg-slate-900 text-slate-100 py-32 duration-500 ease-in-out transition-all ${
                 open ? "translate-x-0" : "translate-x-[-100%]"
                 }`}>
                     

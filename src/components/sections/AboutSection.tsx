@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 
 export const AboutSection = forwardRef<HTMLDivElement, object>((_, ref) => {
   return (
-    <section ref={ref} id="about" className='w-full mx-auto max-w-screen-xxl bg-[#F8FAFC]'>
+    <section ref={ref} id="about" className='w-full mx-auto max-w-screen-xxl bg-slate-900 text-slate-100'>
         <div className="w-full text-center py-3 px-2">
             <h1 className='text-3xl font-bold'>My Journey</h1>
 
